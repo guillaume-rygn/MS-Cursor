@@ -1,12 +1,5 @@
 let script = document.currentScript
 
-let head = document.getElementsByTagName('head')[0];
-var link  = document.createElement('link');
-link.rel  = 'stylesheet';
-link.type = 'text/css';
-link.href = './style.css';
-head.appendChild(link);
-
 window.addEventListener("DOMContentLoaded",() => {
     let iDiv = document.createElement('div');
     iDiv.id = 'cursor';
