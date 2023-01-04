@@ -2,6 +2,8 @@
 
 [![GitHub Version](https://img.shields.io/github/v/release/guillaume-rygn/MS-Cursor.svg?style=for-the-badge)](https://github.com/guillaume-rygn/MS-Cursor/releases)
 
+![Demo](./assets/home.gif)
+
 ## ***It has never been so easy to have a modern mouse design !***
 
 ## Installation
