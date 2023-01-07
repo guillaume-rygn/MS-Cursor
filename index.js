@@ -82,8 +82,8 @@ window.addEventListener("DOMContentLoaded",() => {
         document.querySelector("div.new").border = `0.5px solid ${colors[0]}`
     }
   });
-
-  window.addEventListener("mousemove", function (e) {
+  
+  const addclass = (e) => {
     if(script.getAttribute("pause-animation") !== "disable"){
       document.body.classList.remove("mscursor-nocursor")
       if(script.getAttribute("circle-outline") !== "disable"){
@@ -96,7 +96,10 @@ window.addEventListener("DOMContentLoaded",() => {
     }
         coords.x = e.clientX;
         coords.y = e.clientY;
-  });
+  };
+
+  window.addEventListener("mousemove", addclass) 
+  window.addEventListener("touchmove", addclass) 
   
     function animateCircles() {
         let x = coords.x;
@@ -128,8 +131,8 @@ window.addEventListener("DOMContentLoaded",() => {
         document.body.classList.add("mscursor-nocursor")
       }
   
-      if(script.getAttribute("pause-animation") !== "disable"){
-        document.onmousemove = function(){
+      if(script.getAttribute("pause-animation") !== "disable"){        
+        const moove = () => {
             clearTimeout(timeout);
             timeout = setTimeout(
             () => {    
@@ -161,5 +164,8 @@ window.addEventListener("DOMContentLoaded",() => {
             })
             }, 100)
         }
+
+        document.onmousemove = moove;
+        document.ontouchmove = moove;
       }
   })
