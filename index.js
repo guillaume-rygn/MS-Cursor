@@ -98,8 +98,8 @@ window.addEventListener("DOMContentLoaded",() => {
         coords.y = e.clientY;
   };
 
-  window.addEventListener("mousemove", addclass) 
-  window.addEventListener("touchmove", addclass) 
+  window.addEventListener("mousemove", (e) => addclass(e)) 
+  window.addEventListener("touchmove", (e) => addclass(e.touches[0])) 
   
     function animateCircles() {
         let x = coords.x;
