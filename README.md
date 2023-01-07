@@ -34,7 +34,7 @@ with yarn or npm :
 
 with CDN :
 ```HTML
-<script src='https://cdn.jsdelivr.net/npm/ms-cursor@1.0.1/index.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/index.min.js'></script>
 ```
 
 In HEAD of index.html file: 
@@ -46,7 +46,7 @@ In HEAD of index.html file:
 Or initialize with CDN in HEAD of index.html file: 
 
 ```HTML
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ms-cursor@1.0.1/style.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ms-cursor@1.2.0/style.min.css"/>
 ```
 
 &nbsp;
